@@ -16,7 +16,7 @@ $('document').ready(function() {
                 $(".progress-container").fadeOut('fast', function() {
                     $('#progress-bar').removeClass('cancellable');
                     $("#progress-bar").css("width", 0);
-                    $.post('http://mythic_progbar/actionFinish', JSON.stringify({
+                    $.post('https://mythic_progbar/actionFinish', JSON.stringify({
                         })
                     );
                 })
@@ -33,7 +33,7 @@ $('document').ready(function() {
         cancelledTimer = setTimeout(function () {
             $(".progress-container").fadeOut('fast', function() {
                 $("#progress-bar").css("width", 0);
-                $.post('http://mythic_progbar/actionCancel', JSON.stringify({
+                $.post('https://mythic_progbar/actionCancel', JSON.stringify({
                     })
                 );
             });

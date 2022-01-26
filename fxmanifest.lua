@@ -1,13 +1,11 @@
--- resource_manifest_version '44febabe-d386-4d18-afbe-5e627f4af937'
--- resource_manifest_version '44febabe-d386-4d18-afbe-5e627f4af937'
-fx_version 'adamant'
+fx_version 'cerulean'
 game 'gta5'
 
 name 'Mythic Framework Progress Bar Modifier by TaerAttO'
-author 'Alzar - https://github.com/Alzar - https://github.com/MonsterTaerAttO/mythic_progbar'
-version 'v1.0.1'
+author 'Alzar - https://github.com/Alzar => modified by M. TaerAttO - https://github.com/MonsterTaerAttO/mythic_progbar'
+version '1.0.1'
 
-ui_page('html/index.html') 
+ui_page('html/index.html')
 
 client_scripts {
     'client/functions.lua',
@@ -29,3 +27,5 @@ exports {
     'ProgressWithTickEvent',
     'ProgressWithStartAndTick'
 }
+
+lua54 'yes'
